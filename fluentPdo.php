@@ -2,11 +2,9 @@
 
 /**
  * Database Query
- * 
- * Created by the FluentDbal Database Adaptor
  *
- * @author Elze Kool <info@kooldevelopment.nl>
- **/
+ * Class fluentPdo
+ */
 class fluentPdo
 {
 
@@ -306,10 +304,10 @@ class fluentPdo
      *
      * Accepts more parameters for position based parameters
      *
-     * @param string $sql Custom SQL
+     * @param $sql
      *
-     * @return Query
-     * */
+     * @return $this
+     */
     public function custom($sql) 
     {
         $this->Prepared = null;
@@ -322,11 +320,11 @@ class fluentPdo
     /**
      * Select
      *
-     * @param string|string[] $fields     Fields to select
-     * @param boolean         $for_update Select FOR UPDATE
-     * 
-     * @return Query
-     * */
+     * @param $fields
+     * @param bool $for_update
+     *
+     * @return $this
+     */
     public function select($fields, $for_update = false) {
         $this->Prepared = null;
 
@@ -340,36 +338,39 @@ class fluentPdo
     /**
      * Insert
      *
-     * @return Query
-     * */
+     * @return $this
+     */
     public function insert() 
     {
         $this->Prepared = null;
         $this->setType('insert');
+
         return $this;
     }
 
     /**
      * Replace
      *
-     * @return Query
-     * */
+     * @return $this
+     */
     public function replace() 
     {
         $this->Prepared = null;
         $this->setType('replace');
+
         return $this;
     }
 
     /**
      * Update
      *
-     * @return Query
-     * */
+     * @return $this
+     */
     public function update() 
     {
         $this->Prepared = null;
         $this->setType('update');
+
         return $this;
     }
 
@@ -378,26 +379,31 @@ class fluentPdo
      *
      * @param string $fields Tables to delete (in case of JOIN)
      *
-     * @return Query
-     * */
+     * @param string $fields
+     *
+     * @return $this
+     */
     public function delete($fields = '')
     {
         $this->Prepared = null;
         $this->setType('delete');
         $this->Fields = array_merge($this->Fields, (array) $fields);
+
         return $this;
     }
 
     /**
      * Set table to select/delete from
      *
-     * @param string $table Table
+     * @param $table
      *
-     * @return Query
-     * */
-    public function from($table) 
+     * @return $this
+     * @throws fluentException
+     */
+    public function from($table)
     {
         $this->Prepared = null;
+
         if (($this->Type != 'select') AND ($this->Type != 'delete')) {
             throw new fluentException('From only allowed for select/delete queries');
         }
@@ -410,10 +416,11 @@ class fluentPdo
     /**
      * Set table to update/insert/replace into
      *
-     * @param string $table Table
+     * @param $table
      *
-     * @return Query
-     * */
+     * @return $this
+     * @throws fluentException
+     */
     public function into($table) 
     {
         $this->Prepared = null;
@@ -422,6 +429,7 @@ class fluentPdo
             throw new fluentException('Into only allowed for update/insert/replace queries');
         }
         $this->Table = $table;
+
         return $this;
     }
 
@@ -430,10 +438,10 @@ class fluentPdo
      *
      * Accepts more parameters for position based parameters
      *
-     * @param string|string[] $conditions Conditions
+     * @param $conditions
      *
-     * @return Query
-     * */
+     * @return $this
+     */
     public function where($conditions)
     {
         $this->Prepared = null;
@@ -446,10 +454,10 @@ class fluentPdo
     /**
      * Set Limit
      *
-     * @param int $count  Count
-     * @param int $offset Offset
+     * @param $count
+     * @param int $offset
      *
-     * @return Query
+     * @return $this
      */
     public function limit($count, $offset = 0) 
     {
@@ -458,6 +466,7 @@ class fluentPdo
             $offset,
             $count
         );
+
         return $this;
     }
 
@@ -467,7 +476,7 @@ class fluentPdo
      * @param string $table Table
      * @param string $on    Join on
      *
-     * @return Query
+     * @return $this
      */
     public function leftJoin($table, $on) 
     {
@@ -480,7 +489,7 @@ class fluentPdo
      * @param string $table Table
      * @param string $on    Join on
      *
-     * @return Query
+     * @return $this
      */
     public function rightJoin($table, $on)
     {
@@ -493,7 +502,7 @@ class fluentPdo
      * @param string $table Table
      * @param string $on    Join on
      *
-     * @return Query
+     * @return $this
      */
     public function innerJoin($table, $on)
     {
@@ -506,7 +515,7 @@ class fluentPdo
      * @param string $table Table
      * @param string $on    Join on
      *
-     * @return Query
+     * @return $this
      */
     public function outerJoin($table, $on)
     {
@@ -520,7 +529,7 @@ class fluentPdo
      * @param string $table Table
      * @param string $on    Join on
      *
-     * @return Query
+     * @return $this
      */
     public function join($type, $table, $on)
     {
@@ -536,6 +545,7 @@ class fluentPdo
             $table,
             $on
         );
+
         return $this;
     }
 
@@ -546,7 +556,7 @@ class fluentPdo
      *
      * @param string|string[] $values Field <-> Value combination(s)
      *
-     * @return Query
+     * @return $this
      * */
     public function set($values) 
     {
@@ -556,6 +566,7 @@ class fluentPdo
         }
         $this->Values = array_merge($this->Values, (array) $values);
         $this->handleParams(func_get_args(), 1);
+
         return $this;
     }
 
@@ -565,7 +576,7 @@ class fluentPdo
      * @param string $field     Field
      * @param string $direction Direction (ASC|DESC)
      *
-     * @return Query
+     * @return $this
      */
     public function orderby($field, $direction = 'ASC') 
     {
@@ -574,6 +585,7 @@ class fluentPdo
             throw new fluentException('Invalid direction for Order By');
         }
         $this->OrderBy[] = $field . ' ' . $direction;
+
         return $this;
     }
 
@@ -582,11 +594,12 @@ class fluentPdo
      *
      * @param string $field Field
      *
-     * @return Query
+     * @return $this
      */
     public function groupby($field) 
     {
         $this->GroupBy[] = $field;
+
         return $this;
     }
 

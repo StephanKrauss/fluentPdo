@@ -26,21 +26,17 @@
 		'name' => 'mustermann'
 	);
 
-    /** @var $stmtPdo  */
-	$stmtPdo = $fluentPdo
-		->select($cols)
-		->from('users')
-		->where($where)
-		->execute($formVars);
+    /** @var $stmtPdo fluentPdo  */
+	$stmtPdo = $fluentPdo->select($cols)->from('users')->where($where)->execute($formVars);
 
-	$rawQuery = $fluentPdo->getRawQuery();
-
-	$cleanQuery = $fluentPdo->getRealSql();
-
-	$timeQuery = $fluentPdo->getTime();
-
-	echo $cleanQuery;
-
-    $result = $stmtPdo->fetch(PDO::FETCH_ASSOC);
-
-    var_dump($result);
+    //$rawQuery = $fluentPdo->getRawQuery();
+    //
+    //$cleanQuery = $fluentPdo->getRealSql();
+    //
+    //$timeQuery = $fluentPdo->getTime();
+    //
+    //echo $cleanQuery;
+    //
+    //$result = $stmtPdo->fetch(PDO::FETCH_ASSOC);
+    //
+    //var_dump($result);
