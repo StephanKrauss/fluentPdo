@@ -18,25 +18,33 @@
 	$cols = array('id','name');
 
 	$where = array(
-		"name = :name"
+	    "|name = :name1",
+		"name = :name2"
 	);
 
 	// Variablen aus einem Formular
 	$formVars = array(
-		'name' => 'mustermann'
+		'name1' => 'mustermann',
+        'name2' => 'sonnenschein'
 	);
 
-    /** @var $stmtPdo fluentPdo  */
-	$stmtPdo = $fluentPdo->select($cols)->from('users')->where($where)->execute($formVars);
+    /** @var $stmtPdoObj fluentPdo  */
+	$stmtPdoObj = $fluentPdo
+        ->select($cols)
+        ->from('users')
+        ->where($where)
+        ->execute($formVars)
+        ->getStmtObjPdo();
 
-    //$rawQuery = $fluentPdo->getRawQuery();
-    //
-    //$cleanQuery = $fluentPdo->getRealSql();
-    //
-    //$timeQuery = $fluentPdo->getTime();
-    //
-    //echo $cleanQuery;
-    //
-    //$result = $stmtPdo->fetch(PDO::FETCH_ASSOC);
-    //
-    //var_dump($result);
+    $rawQuery = $fluentPdo->getRawQuery();
+
+    $cleanQuery = $fluentPdo->getRealSql();
+
+    $timeQuery = $fluentPdo->getTime();
+
+    // Ausgabe
+    $result = $fluentPdo->getManyRows();
+
+    // Quoten SQL
+    $string = 'Naughty \' string';
+    $string = $fluentPdo->quote($string);

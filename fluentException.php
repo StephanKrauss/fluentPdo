@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Exception thrown by the FluentDbal database adaptor
- *
- * @author Elze Kool <info@kooldevelopment.nl>
- */
 class fluentException extends Exception
 {
     

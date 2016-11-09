@@ -217,13 +217,36 @@ class fluentPdo
     }
 
     /**
-     * Return WHERE part of SQL query
+     * Gibt den **Where** Part der Query zurück
+     *
+     * + AND Verknüpfung
+     * + OR Verknüpfung mit **|**
+     *
+     *
      *
      * @return string Where part
      * */
     private function sqlWhere()
     {
-        return (count($this->Where) == 0) ? '' : (' WHERE ' . join(' AND ', $this->Where));
+        if(count($this->Where) == 0)
+            return '';
+        else{
+            $where = ' WHERE ';
+
+            foreach($this->Where as $value){
+                if(strstr($value, '|'))
+                    $where .= str_replace('|','',$value)." OR  ";
+                else
+                    $where .= str_replace('|','',$value)." AND ";
+            }
+
+            $where = substr($where,0,-5);
+
+            return $where;
+        }
+
+
+        // return (count($this->Where) == 0) ? '' : (' WHERE ' . implode(' AND ', $this->Where));
     }
 
     /**
@@ -604,11 +627,38 @@ class fluentPdo
     }
 
     /**
+     * Wraps quotes around a string and escapes the content for a string parameter.
+     *
+     * @param $query
+     *
+     * @return mixed|string
+     */
+    public function quote($query)
+    {
+        if ($query === null)
+            return 'NULL';
+
+        if (is_string($query)) {
+            if ($this->Pdo !== null) {
+                $query = $this->Pdo->quote($query);
+            }
+        }
+
+        $query = str_replace(
+                array('\\', "\0", "\n", "\r", "'", '"', "\x1a"),
+                array('\\\\', '\\0', '\\n', '\\r', "\\'", '\\"', '\\Z'),
+            $query
+        );
+
+        return $query;
+    }
+
+    /**
      * Execute Query and return result
      *
-     * @param mixed[] $params Override parameters
+     * @param null $params
      *
-     * @return \PDOStatement Executed statement
+     * @return $this
      */
     public function execute($params = null) 
     {
@@ -617,9 +667,10 @@ class fluentPdo
             $rawSql = $this->getRawQuery();
             $this->Prepared = $this->Pdo->prepare($rawSql);
             $this->Prepared->setFetchMode(\PDO::FETCH_ASSOC);
-        } else {
-            // Make sure cursor is closed
-            $this->Prepared->closeCursor();
+        }
+        else {
+            // erneuter Aufruf
+            $this->execute($params);
         }
 
         // Check which parameters to use
@@ -631,7 +682,7 @@ class fluentPdo
 
         if (!$this->Prepared->execute($params)) {
             $error = $this->Prepared->errorInfo();
-            $exception = new DbalException('[' . $error[0] . '] ' . $error[2]);
+            $exception = new fluentException('[' . $error[0] . '] ' . $error[2]);
             $exception->setPdoStatement($this->Prepared);
 
             throw $exception;
@@ -654,7 +705,7 @@ class fluentPdo
             $this->realSql = $this->generateCleanQuery($params);
 
 
-        return $this->Prepared;
+        return $this;
     }
 
     /**
@@ -724,5 +775,23 @@ class fluentPdo
      */
     public function getRealSql(){
         return $this->realSql;
+    }
+
+    /**
+     * @return PDOStatement
+     */
+    public function getStmtObjPdo()
+    {
+        return $this->Prepared;
+    }
+
+    /**
+     * Gibt alle Zeilen eines Ergebnis zurück
+     *
+     * @return array
+     */
+    public function getManyRows()
+    {
+        return $this->Prepared->fetchAll();
     }
 }

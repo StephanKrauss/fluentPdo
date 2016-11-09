@@ -1,66 +1,62 @@
-# FluentDbal
-FluentDbal is an easy to use and framework independant fluent database abstraction layer on top of PDO.
-It helps you to structure database queries easly without creating overhead.
+# FluentPdo
+Minimalistisches ORM. **Achtung** , momentan noch im Beta Stadium.  
+Nicht für den produktiven Einsatz verwenden.
+
+
+## Credits
+Thanks to
++ elzekool/FluentDbal , elzekool , http://www.kooldevelopment.nl
++ Funktion zur Generierung der realen Query
 
 ## Key features
-* Allows reusing prepared statements
-* Lightweight
-* Promotes use of prepared statements, preventing SQL injection hacks
-
-## Starting with FluentDbal
-1. Make sure PHP 5.3.* is installed
-2. Install FluentDbal using Composer or manually
-3. Create a PDO instance
-4. Create instance of FluentDbal
-5. Use FluentDbal to create queries (sharing PDO connection)
++ fluentes schreiben der PDO 
++ Query wird als **reale** Query zurückgegeben
++ Cachen der Query
++ Rudimentäre Methoden zur Generiwerung der Resultates
 
 ## Example
 ```php
-
-$pdo = new \PDO('mysql:host=127.0.0.1;dbname=world', '', '');
-
-$dbal = new FluentDbal($pdo);
-
-$query = $dbal
-    ->newQuery()
-    ->select('city.Name,country.name, city.District')
-    ->from('city')
-    ->leftJoin('country', 'country.Code = city.CountryCode')
-    ->where('city.CountryCode = ?', 'NLD')        
-        
-    // Orderby can be repeated
-    ->orderby('city.Population','DESC')
-    ->orderby('city.Name','ASC')
-        
-    ->limit(1);
+  
+include_once('fluentPdo.php');
+	include_once( 'fluentException.php' );
+  
+	$server   = 'mysql:dbname=test;host=localhost; port=3306';
+	$user     = 'test';
+	$password = 'test';
+  
+	$options  = array
+	(
+	    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+	);
+  
+	$pdo = new PDO($server, $user, $password, $options);
+	$fluentPdo = new fluentPdo($pdo);
+  
+	$cols = array('id','name');
+  
+	$where = array(
+		"name = :name"
+	);
+  
+	// Variablen aus einem Formular
+	$formVars = array(
+	    	'name' => 'mustermann'
+	);
+  
+/** @var $stmtPdo fluentPdo  */
+$stmtPdo = $fluentPdo->select($cols)->from('users')->where($where)->execute($formVars);
+  
+$rawQuery = $fluentPdo->getRawQuery();
+  
+$cleanQuery = $fluentPdo->getRealSql();
     
-$city = $query->execute();
-
-print_r($city->fetch());
-// stdClass Object
-// (
-//    [Name] => Amsterdam
-//    [name] => Netherlands
-//    [District] => Noord-Holland
-// )
+$timeQuery = $fluentPdo->getTime();
 
 ```
-
-## Changelog
-**11-09-2013**: Allow usage of named parameters while building query
-For the functions *custom*, *set*, *where* it is now posible to directly add named parameters, to
-use this add just one parameter of the type array, with the key as parameter name. If you need to set
-multiple parameters add this in the same array. It is NOT posible to mix numbered and named parameters.
-
-Example: ```->where('city.CountryCode = :cc', array(':cc' => 'NLD'))```
-
-
 
 ## License
 
 (MIT License)
-
-Copyright (c) 2013 Elze Kool <info@kooldevelopment.nl>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
