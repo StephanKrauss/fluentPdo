@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7253f33-5805-4767-a5e7-c0f380fc8c9d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fluentCache.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Exception/DbalException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FluentDbal-master.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FluentDbal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENCE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SqlLoggerInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pdo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pdo1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ElzeKool/FluentDbal/Exception/DbalException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ElzeKool/FluentDbal/FluentDbal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ElzeKool/FluentDbal/Query.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ElzeKool/FluentDbal/SqlLoggerInterface.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/indexFluent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sparrow.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fluentException.php" afterPath="$PROJECT_DIR$/fluentException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fluentPdo.php" afterPath="$PROJECT_DIR$/fluentPdo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,6 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -43,74 +31,30 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="12" column="6" selection-start-line="9" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-17">
-                <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="indexFluent.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/indexFluent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fluentPdo.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fluentPdo.php">
+      <file leaf-file-name="sparrow.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sparrow.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="222" column="33" selection-start-line="222" selection-start-column="33" selection-end-line="222" selection-end-column="33" />
+            <state relative-caret-position="133">
+              <caret line="932" column="0" selection-start-line="932" selection-start-column="0" selection-end-line="932" selection-end-column="0" />
               <folding>
-                <element signature="n#__construct#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#__toString#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#getRawQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#setType#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#sqlWhere#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#select#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#insert#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#replace#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#update#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#delete#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#from#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#into#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#where#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#limit#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#leftJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#rightJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#innerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#outerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#join#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#set#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#orderby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#groupby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#quote#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#execute#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#generateCleanQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#getTime#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#getStmtObjPdo#0;n#fluentPdo#0;n#!!top" expanded="true" />
-                <element signature="n#getManyRows#0;n#fluentPdo#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fluentException.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fluentException.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="21" />
-              <folding>
-                <element signature="n#fluentException#0;n#!!top" expanded="true" />
-                <element signature="n#getPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-                <element signature="n#setPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
+                <marker date="1478811513765" expanded="true" signature="21222:21261" ph="select * fro... author" />
               </folding>
             </state>
           </provider>
@@ -127,12 +71,13 @@
         <option value="$PROJECT_DIR$/controller.php" />
         <option value="$PROJECT_DIR$/model1.php" />
         <option value="$PROJECT_DIR$/model2.php" />
-        <option value="$PROJECT_DIR$/sparrow.php" />
         <option value="$PROJECT_DIR$/DbalException.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/fluentException.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/fluentPdo.php" />
+        <option value="$PROJECT_DIR$/sparrow.php" />
+        <option value="$PROJECT_DIR$/indexFluent.php" />
       </list>
     </option>
   </component>
@@ -179,28 +124,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="fluentPdo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="fluentPdo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="fluentPdo" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,12 +154,16 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\fluentPdo" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -244,25 +193,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER" />
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER,Show Fields" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -285,32 +221,35 @@
       <workItem from="1478623028152" duration="935000" />
       <workItem from="1478623979290" duration="569000" />
       <workItem from="1478707191084" duration="4223000" />
+      <workItem from="1478805577885" duration="6228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14054000" />
+    <option name="totallyTimeSpent" value="20282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09968017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22014925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10074627" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22014925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28093645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4610245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -344,15 +283,60 @@
           <line>242</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sparrow.php</url>
+          <line>1312</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sparrow.php</url>
+          <line>806</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="47" />
+      <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fluentPdo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fluentException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -373,36 +357,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#__construct#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#__toString#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getRawQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#setType#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#sqlWhere#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#insert#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#replace#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#update#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#delete#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#from#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#into#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#where#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#limit#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#leftJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#rightJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#innerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#outerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#join#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#set#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#orderby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#groupby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#quote#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#execute#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#generateCleanQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getTime#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getStmtObjPdo#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getManyRows#0;n#fluentPdo#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -426,36 +381,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="n#__construct#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#__toString#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getRawQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#setType#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#sqlWhere#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#insert#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#replace#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#update#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#delete#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#from#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#into#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#where#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#limit#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#leftJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#rightJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#innerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#outerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#join#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#set#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#orderby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#groupby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#quote#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#execute#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#generateCleanQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getTime#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getStmtObjPdo#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getManyRows#0;n#fluentPdo#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -463,11 +389,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#getPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#setPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -483,36 +405,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7089">
           <caret line="643" column="31" selection-start-line="643" selection-start-column="31" selection-end-line="643" selection-end-column="31" />
-          <folding>
-            <element signature="n#__construct#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#__toString#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getRawQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#setType#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#sqlWhere#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#insert#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#replace#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#update#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#delete#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#from#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#into#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#where#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#limit#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#leftJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#rightJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#innerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#outerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#join#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#set#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#orderby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#groupby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#quote#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#execute#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#generateCleanQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getTime#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getStmtObjPdo#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getManyRows#0;n#fluentPdo#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -520,11 +413,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#getPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#setPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -540,36 +429,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2601">
           <caret line="216" column="17" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="17" />
-          <folding>
-            <element signature="n#__construct#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#__toString#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getRawQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#setType#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#sqlWhere#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#insert#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#replace#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#update#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#delete#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#from#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#into#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#where#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#limit#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#leftJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#rightJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#innerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#outerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#join#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#set#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#orderby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#groupby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#quote#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#execute#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#generateCleanQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getTime#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getStmtObjPdo#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getManyRows#0;n#fluentPdo#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -577,11 +437,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#getPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#setPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -646,24 +502,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model1.php" />
     <entry file="file://$PROJECT_DIR$/model1.php" />
-    <entry file="file://$PROJECT_DIR$/sparrow.php" />
     <entry file="file://$PROJECT_DIR$/model2.php" />
-    <entry file="file://$PROJECT_DIR$/pdo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pdo.php" />
+    <entry file="file://$PROJECT_DIR$/composer.json" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -674,69 +515,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fluentException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="42">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <element signature="n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#getPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-            <element signature="n#setPdoStatement#0;n#fluentException#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-17">
-            <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fluentPdo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="222" column="33" selection-start-line="222" selection-start-column="33" selection-end-line="222" selection-end-column="33" />
+        <state relative-caret-position="50">
+          <caret line="662" column="20" selection-start-line="662" selection-start-column="20" selection-end-line="662" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="6" selection-start-line="9" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparrow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="932" column="0" selection-start-line="932" selection-start-column="0" selection-end-line="932" selection-end-column="0" />
           <folding>
-            <element signature="n#__construct#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#__toString#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getRawQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#setType#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#sqlWhere#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#insert#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#replace#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#update#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#delete#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#from#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#into#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#where#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#limit#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#leftJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#rightJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#innerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#outerJoin#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#join#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#set#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#orderby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#groupby#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#quote#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#execute#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#generateCleanQuery#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getTime#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getStmtObjPdo#0;n#fluentPdo#0;n#!!top" expanded="true" />
-            <element signature="n#getManyRows#0;n#fluentPdo#0;n#!!top" expanded="true" />
+            <marker date="1478811513765" expanded="true" signature="21222:21261" ph="select * fro... author" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexFluent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
